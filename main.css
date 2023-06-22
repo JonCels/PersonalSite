@@ -1,0 +1,73 @@
+body {
+    background-color: #f2f0ee;
+}
+
+h1 {
+    font-family: verdana;
+    color: #58595b;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.wrapper-background {
+    background-color: white;
+    border-radius: 8px;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+
+}
+
+.information-highlight {
+    font-family: verdana;
+    font-size: 14px;
+    color: #58595b;
+}
+
+#about-me {
+    width: 300px;
+    font-size: 14px;
+}
+
+.wrapper-content {
+    width: 1150px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.side-nav-left {
+    float: left;
+    border: 1px solid green;
+    width: 55px;
+    height: 600px;
+    margin: 10px;
+}
+
+.landing-left {
+    float: left;
+    border: 1px solid red;
+    width: 480px;
+    height: 600px;
+    margin: 10px;
+}
+
+.landing-right {
+    float: left;
+    border: 1px solid blue;
+    width: 470px;
+    height: 600px;
+    margin: 10px;
+}
+
+.side-nav-right {
+    float: left;
+    border: 1px solid green;
+    width: 55px;
+    height: 600px;
+    margin: 10px;
+}
