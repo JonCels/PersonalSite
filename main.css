@@ -34,22 +34,26 @@ p {
 }
 
 .nav-icon {
+    border: 1px solid black;
     vertical-align: middle;
     margin-bottom: 3px;
 }
 
 .nav-link {
     text-decoration: none;
+    border: 1px solid blue;
 }
 
 .nav-left {
     float: left;
+    border: 1px solid yellow;
     width: 700px;
     margin: 10px;
 }
 
 .nav-right {
     float: left;
+    border: 1px solid yellow;
     width: 400px;
     margin: 10px;
 }
@@ -67,11 +71,13 @@ p {
 
 .wrapper-content {
     width: 1150px;
+    border: 1px solid black;
     overflow: hidden;
 }
 
 .side-nav-left {
     float: left;
+    border: 1px solid green;
     width: 55px;
     height: 600px;
     margin: 10px;
@@ -79,6 +85,7 @@ p {
 
 .landing-left {
     float: left;
+    border: 1px solid red;
     width: 480px;
     height: 600px;
     margin: 10px;
@@ -86,6 +93,7 @@ p {
 
 .landing-right {
     float: left;
+    border: 1px solid blue;
     width: 470px;
     height: 600px;
     margin: 10px;
@@ -93,6 +101,7 @@ p {
 
 .side-nav-right {
     float: left;
+    border: 1px solid green;
     width: 55px;
     height: 600px;
     margin: 10px;
@@ -102,9 +111,11 @@ p {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    border: 1px solid black;
 }
 
 .side-nav-link {
+    border: 1px solid green;
     margin: 5px;
 }
 
