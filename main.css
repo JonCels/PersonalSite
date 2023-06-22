@@ -20,7 +20,38 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 65px;
+    border: 1px solid black;
+    overflow: hidden;
+}
 
+.nav-info {
+    float: left;
+    margin-top: 12px;
+}
+
+.nav-info-2 {
+    float: left;
+}
+
+.nav-icon {
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-left {
+    float: left;
+    width: 700px;
+    margin: 10px;
+}
+
+.nav-right {
+    float: left;
+    width: 400px;
+    margin: 10px;
 }
 
 .information-highlight {
@@ -36,13 +67,11 @@ p {
 
 .wrapper-content {
     width: 1150px;
-    border: 1px solid black;
     overflow: hidden;
 }
 
 .side-nav-left {
     float: left;
-    border: 1px solid green;
     width: 55px;
     height: 600px;
     margin: 10px;
@@ -50,7 +79,6 @@ p {
 
 .landing-left {
     float: left;
-    border: 1px solid red;
     width: 480px;
     height: 600px;
     margin: 10px;
@@ -58,7 +86,6 @@ p {
 
 .landing-right {
     float: left;
-    border: 1px solid blue;
     width: 470px;
     height: 600px;
     margin: 10px;
@@ -66,8 +93,36 @@ p {
 
 .side-nav-right {
     float: left;
-    border: 1px solid green;
     width: 55px;
     height: 600px;
     margin: 10px;
+}
+
+.side-nav-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side-nav-link {
+    margin: 5px;
+}
+
+.side-nav-icon {
+    margin-top: 2px;
+    height: 40px;
+    width: 40px;
+}
+
+#information-highlight-slash {
+    font-family: verdana;
+    font-size: 16px;
+    color: #58595b;
+}
+
+#headshot {
+    max-width:470px;
+    max-height:600px;
+    width: auto;
+    height: auto;
 }
