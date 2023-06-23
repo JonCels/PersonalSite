@@ -1,16 +1,5 @@
 body {
-    background-color: #f2f0ee;
-}
-
-h1 {
-    font-family: verdana;
-    color: #58595b;
-    text-align: center;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
+    background-color: #FFFBF5;
 }
 
 .wrapper-background {
@@ -20,8 +9,9 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 65px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
 
 .nav-info {
@@ -31,31 +21,43 @@ p {
 
 .nav-info-2 {
     float: left;
+    margin-top: 2px;
 }
 
 .nav-icon {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     vertical-align: middle;
     margin-bottom: 3px;
+    max-width: 30px;
 }
 
 .nav-link {
     text-decoration: none;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .nav-left {
     float: left;
-    border: 1px solid yellow;
-    width: 700px;
-    margin: 10px;
+    /* border: 1px solid yellow; */
+    width: 40px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+.nav-middle {
+    float: left;
+    /* border: 1px solid yellow; */
+    width: 490px;
+    margin: 20px;
 }
 
 .nav-right {
     float: left;
-    border: 1px solid yellow;
-    width: 400px;
-    margin: 10px;
+    /* border: 1px solid yellow; */
+    width: 468px;
+    margin: 20px;
+    /* border: 1px solid black; */
 }
 
 .information-highlight {
@@ -64,44 +66,39 @@ p {
     color: #58595b;
 }
 
-#about-me {
-    width: 300px;
-    font-size: 14px;
-}
-
 .wrapper-content {
     width: 1150px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
 }
 
 .side-nav-left {
     float: left;
-    border: 1px solid green;
-    width: 55px;
+    /* border: 1px solid green; */
+    width: 34px;
     height: 600px;
-    margin: 10px;
+    margin-left: 30px;
 }
 
 .landing-left {
     float: left;
-    border: 1px solid red;
-    width: 480px;
+    /* border: 1px solid red; */
+    width: 470px;
     height: 600px;
     margin: 10px;
 }
 
 .landing-right {
     float: left;
-    border: 1px solid blue;
-    width: 470px;
+    /* border: 1px solid blue; */
+    width: auto;
     height: 600px;
     margin: 10px;
 }
 
 .side-nav-right {
     float: left;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 55px;
     height: 600px;
     margin: 10px;
@@ -111,11 +108,11 @@ p {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .side-nav-link {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 5px;
 }
 
@@ -125,15 +122,59 @@ p {
     width: 40px;
 }
 
-#information-highlight-slash {
+.information-highlight-slash {
     font-family: verdana;
     font-size: 16px;
     color: #58595b;
 }
 
+.name-card {
+    font-family: verdana;
+    font-size: 40px;
+    font-weight: bold;
+    color: #003243;
+    padding: 60px;
+    padding-bottom: 0px;
+}
+
+.titles-card {
+    width: 360px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.about-me-card {
+    width: 360px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.titles {
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: 550;
+    color: #003243;
+}
+
+.blurb {
+    font-family: verdana;
+    font-size: 14px;
+    color: #58595b;
+}
+
+.gif-coding {
+    padding-left: 60px; 
+    margin-top: 62px;
+    width: 240px; 
+    height: 180px;
+}
+
 #headshot {
-    max-width:470px;
+    max-width:550px;
     max-height:600px;
     width: auto;
     height: auto;
+    border-radius: 5px;
+    margin-top: 70px;
+    box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
