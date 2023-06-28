@@ -11,8 +11,8 @@
         <div class="professional-experience">
             <div class="job-left">
                 <div class="job-logo">
-                    <a class="logo" href="https://www.celestica.com/">
-                        <img src="../images/icon-celestica-logo.svg" alt="celestica-logo">
+                    <a href="https://www.celestica.com/">
+                        <img class="logo" src="../images/logo-celestica.png" alt="celestica-logo">
                     </a>
                 </div>
                 <div class="job-info">
@@ -21,8 +21,8 @@
                     <span class="company-name">Celestica Inc.</span>
                 </div>
                 <div class="expand-arrow">
-                    <img id="more-arrow-1" src="../images/icon-expand-more.svg" alt="show more" onclick="testFunction(false)">
-                    <img id="less-arrow-1" src="../images/icon-expand-less.svg" alt="show less" onclick="testFunction(true)" style="display: none;">
+                    <img id="more-arrow-1" src="../images/icon-expand-more.svg" alt="show more" onclick="toggleArrow('1')">
+                    <img id="less-arrow-1" src="../images/icon-expand-less.svg" alt="show less" onclick="toggleArrow('1')" style="display: none;">
                 </div>
                 <div class="job-desc" id="job-desc-1" style="display: none;">
                     <span class="job-blurb">
@@ -32,29 +32,46 @@
             </div>
             <hr>
             <div class="job-right">
+                <div class="expand-arrow">
+                    <img id="more-arrow-2" src="../images/icon-expand-more.svg" alt="show more" onclick="toggleArrow('2')">
+                    <img id="less-arrow-2" src="../images/icon-expand-less.svg" alt="show less" onclick="toggleArrow('2')" style="display: none;">
+                </div>
                 <div class="job-info">
                     <span class="job-title">Global IT Solutions Intern</span>
                     <span class="job-date">2020-2020</span>
                     <span class="company-name">F. Hoffmann-La Roche Ltd.</span>
-                    <span class="job-blurb">Blah blah blah</span>
                 </div>
                 <div class="job-logo">
-                    <a class="logo" href="https://www.roche.com/">
-                        <img src="../images/icon-roche-logo.svg" alt="roche-logo">
+                    <a href="https://www.roche.com/">
+                        <img class="logo" src="../images/logo-roche.png" alt="roche-logo">
                     </a>
                 </div>
+                <div class="job-desc" id="job-desc-2" style="display: none;">
+                    <span class="job-blurb">
+                        Blah blah blah
+                    </span>
+                </div>
             </div>
+            <hr>
             <div class="job-left">
                 <div class="job-logo">
-                    <a class="logo" href="https://www.roche.com/">
-                        <img src="../images/icon-roche-logo.svg" alt="roche-logo">
+                    <a href="https://www.roche.com/">
+                        <img class="logo" src="../images/logo-roche.png" alt="roche-logo">
                     </a>
                 </div>
                 <div class="job-info">
                     <span class="job-title">Commercial Finance Intern</span>
                     <span class="job-date">2019-2019</span>
                     <span class="company-name">F. Hoffmann-La Roche Ltd.</span>
-                    <span class="job-blurb">Blah blah blah</span>
+                </div>
+                <div class="expand-arrow">
+                    <img id="more-arrow-3" src="../images/icon-expand-more.svg" alt="show more" onclick="toggleArrow('3')">
+                    <img id="less-arrow-3" src="../images/icon-expand-less.svg" alt="show less" onclick="toggleArrow('3')" style="display: none;">
+                </div>
+                <div class="job-desc" id="job-desc-3" style="display: none;">
+                    <span class="job-blurb">
+                        Blah blah blah
+                    </span>
                 </div>
             </div>
         </div>
