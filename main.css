@@ -178,3 +178,29 @@ body {
     margin-top: 70px;
     box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
+
+.job-left {
+    overflow: hidden;
+}
+
+.job-right {
+    overflow: hidden;
+}
+
+.job-info {
+    float: left;
+}
+
+.job-desc {
+    float: left;
+}
+
+.job-logo {
+    float: left;
+}
+
+hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
