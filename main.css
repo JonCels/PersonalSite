@@ -164,14 +164,14 @@ body {
 
 .gif-coding {
     padding-left: 60px; 
-    margin-top: 62px;
-    width: 240px; 
-    height: 180px;
+    margin-top: 24px;
+    width: 224px; 
+    height: 168px;
 }
 
 #headshot {
-    max-width:550px;
-    max-height:600px;
+    max-width: 550px;
+    max-height: 600px;
     width: auto;
     height: auto;
     border-radius: 5px;
@@ -180,7 +180,13 @@ body {
 }
 
 .job-left {
+    /* overflow: hidden; */
+    /* border: 1px solid yellowgreen; */
+}
+
+.job-top-wrapper {
     overflow: hidden;
+    /* border: 1px solid blueviolet; */
 }
 
 .job-right {
@@ -189,23 +195,55 @@ body {
 
 .job-info {
     float: left;
+    /* border: 1px solid black; */
 }
 
-.job-desc {
+.job-title {
+    font-family: verdana;
+    font-size: 36px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.job-expand-wrapper {
     float: left;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.job-blurb-wrapper {
+    float: left;
+    /* border: 1px solid black; */
+    width: 75%;
+}
+
+.job-blurb {
+    font-family: verdana;
+}
+
+.job-glance-wrapper {
+    float: left;
+    /* border: 1px solid blue; */
+    width: 25%;
+}
+
+.job-glance {
+
 }
 
 .job-logo {
     float: left;
+    /* border: 1px solid black; */
 }
 
 .logo {
-    max-width:500px;
-    max-height:400px;
+    max-width:400px;
+    max-height:300px;
     width: auto;
     height: auto;
     margin: 20px;
 }
+
 hr {
     width: 90%;
     margin-left: auto;

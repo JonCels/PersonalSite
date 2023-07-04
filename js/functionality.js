@@ -1,7 +1,7 @@
 function toggleArrow(idNum) {
     var moreArrow = document.getElementById("more-arrow-".concat(idNum));
     var lessArrow = document.getElementById("less-arrow-".concat(idNum));
-    var jobDesc = document.getElementById("job-desc-".concat(idNum));
+    var jobDesc = document.getElementById("job-expand-wrapper-".concat(idNum));
 
     if (moreArrow.style.display === "none") { //Hide
         moreArrow.style.display = "block";
