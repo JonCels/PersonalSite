@@ -193,7 +193,7 @@ html {
 }
 
 .job-info-wrapper {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     margin-top: 30px;
     overflow: hidden;
@@ -220,6 +220,10 @@ html {
     font-size: 24px;
     font-weight: bold;
     color: #003243;
+}
+
+.job-date-wrapper {
+    margin-bottom: 20px;
 }
 
 .job-date {
@@ -301,8 +305,10 @@ html {
 
 .glance-languages-wrapper {
     width: 100%;
-    margin-top: 20px;
-    /* border: 1px solid red; */
+    width: 100%;
+    display: inline-block;
+    max-width: 158px;
+    white-space: normal;
 }
 
 .glance-languages {
@@ -314,7 +320,8 @@ html {
     /* border: 1px solid red; */
     width: 100%;
     display: inline-block;
-    max-width: 300px;
+    max-width: calc(100px + 6vw);
+    white-space: normal;
 }
 
 .glance-technologies {
@@ -325,7 +332,7 @@ html {
 
 .job-logo-wrapper {
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .logo {
@@ -346,12 +353,27 @@ hr {
     margin-right: auto;
 }
 
-.test-1 {
-    float: left;
-    border: 1px solid red;
+.job-glance-top-wrapper {
+    /* border: 1px solid red; */
+    white-space: nowrap;
 }
 
-.test-2 {
-    border: 1px solid blue;
-    overflow: hidden;
+.job-glance-left {
+    border-right: 2px solid grey;
+    display: inline-block;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.job-glance-right {
+    /* border: 1px solid rosybrown; */
+    display: inline-block;
+    vertical-align:top;
+    white-space: normal;
+    
+}
+
+.job-glance-bottom-wrapper {
+    /* border: 1px solid red; */
+    white-space: nowrap;
 }
