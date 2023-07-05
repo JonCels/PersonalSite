@@ -185,7 +185,6 @@ html {
 
 .job-top-wrapper {
     overflow: hidden;
-    position: relative;
     /* border: 1px solid blueviolet; */
 }
 
@@ -194,10 +193,11 @@ html {
 }
 
 .job-info-wrapper {
-    /* border: 1px solid black; */
-    width: 100%;
+    border: 1px solid black;
     text-align: center;
     margin-top: 30px;
+    overflow: hidden;
+    min-width: 300px;
 }
 
 .job-title-wrapper {
@@ -278,9 +278,9 @@ html {
 
 .job-glance-wrapper {
     /* border: 1px solid blue; */
+    margin: auto;
     text-align: left;
-    margin-left: 48%;
-    width: 44%;
+    min-width: 40%;
 }
 
 .glance-title-wrapper {
@@ -289,6 +289,7 @@ html {
     width: 130px;
     margin-bottom: 20px;
     border-right: 2px solid grey;
+    
     /* border: 1px solid black; */
 }
 
@@ -312,16 +313,19 @@ html {
 .glance-technologies-wrapper {
     /* border: 1px solid red; */
     width: 100%;
+    display: inline-block;
+    max-width: 300px;
 }
 
 .glance-technologies {
     font-family: Verdana;
     color: #58595b;
+    /* width: 100px; */
 }
 
 .job-logo-wrapper {
     float: left;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .logo {
@@ -331,6 +335,7 @@ html {
     height: auto;
     margin: 20px;
     margin-bottom: 0px;
+    display: inline-block;
 }
 
 hr {
@@ -339,4 +344,14 @@ hr {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.test-1 {
+    float: left;
+    border: 1px solid red;
+}
+
+.test-2 {
+    border: 1px solid blue;
+    overflow: hidden;
 }
