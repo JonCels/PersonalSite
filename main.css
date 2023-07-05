@@ -202,6 +202,7 @@ html {
 
 .job-title-wrapper {
     /* border: 1px solid red; */
+    margin-top: 30px;
 }
 
 .job-title {
@@ -265,7 +266,7 @@ html {
     float: left;
     /* border: 1px solid black; */
     margin: 60px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -287,13 +288,27 @@ html {
     min-width: 40%;
 }
 
+.glance-top {
+    overflow: hidden; 
+    display: inline-block; 
+    text-align: left; 
+    white-space: nowrap; 
+    vertical-align: top;
+}
+
+.glance-bottom {
+    overflow: hidden; 
+    display: inline-block; 
+    text-align: left; 
+    white-space: normal;
+}
+
 .glance-title-wrapper {
     float: left;
     margin-right: 10px;
     width: 130px;
     margin-bottom: 20px;
     border-right: 2px solid grey;
-    
     /* border: 1px solid black; */
 }
 
@@ -309,6 +324,7 @@ html {
     display: inline-block;
     max-width: 158px;
     white-space: normal;
+    margin-right: 10px;
 }
 
 .glance-languages {
@@ -320,8 +336,9 @@ html {
     /* border: 1px solid red; */
     width: 100%;
     display: inline-block;
-    max-width: calc(100px + 6vw);
+    max-width: calc(90px + 6vw);
     white-space: normal;
+    margin-right: 10px;
 }
 
 .glance-technologies {
@@ -330,8 +347,17 @@ html {
     /* width: 100px; */
 }
 
-.job-logo-wrapper {
+.job-logo-wrapper-left {
     float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+
+.job-logo-wrapper-right {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
     /* border: 1px solid black; */
 }
 
@@ -340,9 +366,10 @@ html {
     max-height: 300px;
     width: auto;
     height: auto;
-    margin: 20px;
+    margin: 40px;
     margin-bottom: 0px;
     display: inline-block;
+
 }
 
 hr {
@@ -351,29 +378,4 @@ hr {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.job-glance-top-wrapper {
-    /* border: 1px solid red; */
-    white-space: nowrap;
-}
-
-.job-glance-left {
-    border-right: 2px solid grey;
-    display: inline-block;
-    padding-right: 10px;
-    text-align: left;
-}
-
-.job-glance-right {
-    /* border: 1px solid rosybrown; */
-    display: inline-block;
-    vertical-align:top;
-    white-space: normal;
-    
-}
-
-.job-glance-bottom-wrapper {
-    /* border: 1px solid red; */
-    white-space: nowrap;
 }
