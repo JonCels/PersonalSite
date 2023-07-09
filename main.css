@@ -184,10 +184,6 @@ html {
     box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
 
-.detail-lines {
-    margin-bottom: 18px;
-}
-
 .job-top-wrapper {
     overflow: hidden;
     /* border: 1px solid blueviolet; */
@@ -215,10 +211,6 @@ html {
     font-size: 36px;
     font-weight: bold;
     color: #003243;
-}
-
-.company-name-wrapper {
-    /* float: left; */
 }
 
 .company-name {
