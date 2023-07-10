@@ -372,6 +372,10 @@ html {
 
 }
 
+.detail-lines {
+    overflow: hidden;
+}
+
 hr {
     width: 90%;
     margin-top: 20px;
@@ -379,3 +383,4 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
