@@ -242,7 +242,7 @@ html {
 
 .expand-arrow {
     margin: auto;
-    /* border: 2px solid black; */
+    /* border: 1px solid black; */
     /* border-radius: 50%; */
     width: 100%;
     height: 100%;
@@ -420,7 +420,6 @@ html {
 }
 
 .degree-blurb-wrapper {
-    float: left;
     /* border: 1px solid black; */
     margin: 60px;
     margin-top: 20px;
@@ -459,7 +458,6 @@ html {
 }
 
 .coursework-blurb-wrapper {
-    float: left;
     /* border: 1px solid black; */
     margin: 60px;
     margin-top: 20px;
@@ -478,21 +476,25 @@ html {
     min-width: 300px;
 }
 
+.course-row-wrapper {
+    display: flex;
+}
+
 .course-row {
     display: flex;
-    /* gap: 20px; */
-    
+    flex-direction: column;
+    flex: 1;
 }
 
 .course-col {
-    flex: 50%;
     background-color: #F0F8FF;
     border-radius: 8px;
     margin: 20px;
+    overflow: hidden;
 }
 
 .course-title-wrapper {
-    margin: 4px;
+    margin-top: 20px;
 }
 
 .course-title {
@@ -532,3 +534,4 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
