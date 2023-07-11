@@ -7,6 +7,183 @@
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
+    <div class="wrapper-background">
+        <div class="detail-lines">
+            <div class="nav-left">
+                <div class="nav-info">
+                    <a class="nav-link" href="./home.html">
+                        <img class="nav-icon" src="../images/icon-home.svg" alt="home icon"> 
+                    </a>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <div class="nav-info">
+                    <span class="information-highlight">Contact Me:</span>
+                    <a class="nav-link" href="#">
+                        <span class="information-highlight">289-981-2109</span>
+                        <img class="nav-icon" src="../images/icon-phone.svg" alt="phone icon" style="transform: scale(-1,1);">
+                    </a>
+                </div>
+                <div class="nav-info-2">
+                    <h1 class="information-highlight-slash">&nbsp/&nbsp</h1>
+                </div>
+                <div class="nav-info">
+                    <a class="nav-link" href="#">
+                        <span class="information-highlight">celsjonathan@gmail.com</span>
+                        <img class="nav-icon" src="../images/icon-email.svg" alt="email icon">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right" style="margin-right: 40px; float: right;">
+                <div>
+                    <div class="nav-info">
+                        <a href="./experience.html" class="nav-link" href="#">
+                            <span class="information-highlight">Experience</span>
+                            <img class="nav-icon" src="../images/icon-briefcase.svg" alt="briefcase icon">
+                        </a>
+                    </div>
+                    <div class="nav-info-2">
+                        <h1 class="information-highlight-slash">&nbsp/&nbsp</h1>
+                    </div>
+                    <div class="nav-info">
+                        <a href="./education.html" class="nav-link" href="#">
+                            <span class="information-highlight">Education</span>
+                            <img class="nav-icon" src="../images/icon-paper.svg" alt="paper icon">
+                        </a>
+                    </div>
+                    <div class="nav-info-2">
+                        <h1 class="information-highlight-slash">&nbsp/&nbsp</h1>
+                    </div>
+                    <div class="nav-info">
+                        <a href="./projects.html" class="nav-link" href="#">
+                            <span class="information-highlight">Projects</span>
+                            <img class="nav-icon" src="../images/icon-terminal.svg" alt="terminal icon">
+                        </a>
+                    </div>
+                    <div class="nav-info-2">
+                        <h1 class="information-highlight-slash">&nbsp/&nbsp</h1>
+                    </div>
+                    <div class="nav-info">
+                        <a href="./aboutme.html" class="nav-link" href="#">
+                            <span class="information-highlight">About Me</span>
+                            <img class="nav-icon"src="../images/icon-person.svg" alt="person icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education-top-wrapper" id="education-top-wrapper-1" style="overflow: visible;">
+            <div class="education-logo-wrapper-right">
+                <a href="https://www.mcmaster.ca/">
+                    <img class="logo" src="../images/logo-mcmaster.png" alt="mcmaster-logo">
+                </a>
+            </div>
+            <div class="degree-info-wrapper">
+                <div class="degree-title-wrapper">
+                    <span class="degree-title">Bachelor of Engineering</span>
+                </div>
+                <div class="specialization-title-wrapper">
+                    <span class="specialization-title">Software Engineering Co-op</span>
+                </div>
+                <div class="degree-date-wrapper">
+                    <span class="degree-date">September 2018 - June 2023</span>
+                </div>
+            </div>
+            <div class="degree-blurb-wrapper">
+                <hr>
+                <span class="degree-blurb">
+                    I started at McMaster in the fall of 2018 in the engineering program. After the first year of general engineering, I met the GPA cutoff for the software engineering stream and never looked back. I graduated with summa cum laude and a GPA of 3.8 in June of 2023. More importantly, I got a <a href="https://en.wikipedia.org/wiki/Iron_Ring">neat ring</a> out of the whole deal.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-background">
+        <div class="coursework-info-wrapper">
+            <div class="coursework-title-wrapper">
+                <span class="coursework-title">Coursework Highlights</span>
+            </div>
+        </div>
+        <div class="course-info-wrapper">
+            <div class="course-row">
+                <div class="course-col">
+                    <div class="course-title-wrapper">
+                        <span class="course-title">Engineering Capstone</span>
+                    </div>
+                    <div class="course-code-wrapper">
+                        <span class="course-code">SFWRENG 4G06A/B</span>
+                    </div>
+                    <div class="course-blurb-wrapper" id="course-expand-wrapper-1" style="display: none;">
+                        <hr>
+                        <span class="course-blurb">
+                            Nulla at sollicitudin ante, nec porttitor lectus. Ut turpis nulla, tincidunt sed metus at, auctor condimentum velit. Mauris congue metus a sapien egestas posuere. Aliquam metus nisl, bibendum ac dui in, semper ullamcorper orci. Aliquam eu blandit risus. Fusce augue ipsum, varius quis risus eu, ultrices sodales justo. Nullam sed ex a nibh vulputate fermentum non et ligula. Proin quis hendrerit elit, nec gravida ligula. 
+                            <br>
+                            <br>
+                            Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                        </span>
+                    </div>
+                    <div class="expand-arrow-wrapper">
+                        <div class="expand-arrow" id="expand-arrow-hide-course-1" onclick="toggleCourseArrow('1')">
+                            <img id="more-arrow-course-1" src="../images/icon-expand-more.svg" alt="show more">
+                        </div>
+                        <div class="expand-arrow" id="expand-arrow-show-course-1" style="display: none;" onclick="toggleCourseArrow('1')">
+                            <img id="less-arrow-course-1" src="../images/icon-expand-less.svg" alt="show less" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="course-col">
+                    <span class="course-title">Data Structures & Algorithms</span>
+                    <div class="expand-arrow-wrapper">
+                        <div class="expand-arrow" id="expand-arrow-hide-course-2" onclick="toggleCourseArrow('2')">
+                            <img id="more-arrow-course-2" src="../images/icon-expand-more.svg" alt="show more">
+                        </div>
+                        <div class="expand-arrow" id="expand-arrow-show-course-2" style="display: none;" onclick="toggleCourseArrow('2')">
+                            <img id="less-arrow-course-2" src="../images/icon-expand-less.svg" alt="show less" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-row">
+                <div class="course-col">
+                    <span class="course-title">Concurrent Programming</span>
+                    <div class="expand-arrow-wrapper">
+                        <div class="expand-arrow" id="expand-arrow-hide-course-3" onclick="toggleCourseArrow('3')">
+                            <img id="more-arrow-course-3" src="../images/icon-expand-more.svg" alt="show more">
+                        </div>
+                        <div class="expand-arrow" id="expand-arrow-show-course-3" style="display: none;" onclick="toggleCourseArrow('3')">
+                            <img id="less-arrow-course-3" src="../images/icon-expand-less.svg" alt="show less" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="course-col">
+                    <span class="course-title">Machine Learning</span>
+                    <div class="expand-arrow-wrapper">
+                        <div class="expand-arrow" id="expand-arrow-hide-course-4" onclick="toggleCourseArrow('4')">
+                            <img id="more-arrow-course-4" src="../images/icon-expand-more.svg" alt="show more">
+                        </div>
+                        <div class="expand-arrow" id="expand-arrow-show-course-4" style="display: none;" onclick="toggleCourseArrow('4')">
+                            <img id="less-arrow-course-4" src="../images/icon-expand-less.svg" alt="show less" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        <div class="glance-top">
+            <div class="glance-title-wrapper" style="margin-bottom: 20px; margin-left: 20px;">
+                <span class="glance-title">Languages &</span>
+                <br>
+                <span class="glance-title">Frameworks</span>
+            </div>
+            <div class="glance-languages-wrapper">
+                <span class="glance-languages">Java, PL/SQL, Oracle ADF, Git</span>
+            </div>
+        </div>
+    </div>
+
     <div class="education">
         <span class="section-title">Education</span>
         <h1>McMaster University</h1>
@@ -49,5 +226,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/functionality.js"></script>
 </body>
 </html>

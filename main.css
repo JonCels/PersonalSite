@@ -376,6 +376,155 @@ html {
     overflow: hidden;
 }
 
+.degree-info-wrapper {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.degree-title-wrapper {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+.degree-title {
+    font-family: verdana;
+    font-size: 36px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.specialization-title-wrapper {
+    margin: 10px;
+}
+
+.specialization-title {
+    font-family: verdana;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.degree-date-wrapper {
+    margin-bottom: 10px;
+}
+
+.degree-date {
+    text-align: right;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.degree-blurb-wrapper {
+    float: left;
+    /* border: 1px solid black; */
+    margin: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.degree-blurb-title {
+    font-family: verdana;
+    font-weight: bold;
+    color: #003243;
+}
+
+.degree-blurb {
+    font-family: verdana;
+    color: #58595b;
+}
+
+.coursework-info-wrapper {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.coursework-title-wrapper {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+.coursework-title {
+    font-family: verdana;
+    font-size: 36px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.coursework-blurb-wrapper {
+    float: left;
+    /* border: 1px solid black; */
+    margin: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.coursework-blurb {
+    font-family: verdana;
+    color: #58595b;
+}
+
+.course-info-wrapper {
+    /* margin: 30px; */
+    text-align: center;
+    margin-top: 30px;
+    min-width: 300px;
+}
+
+.course-row {
+    display: flex;
+    /* gap: 20px; */
+    
+}
+
+.course-col {
+    flex: 50%;
+    background-color: #F0F8FF;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.course-title-wrapper {
+    margin: 4px;
+}
+
+.course-title {
+    font-family: verdana;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.course-code-wrapper {
+    margin: 4px;
+}
+
+.course-code {
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    color: #003243;
+}
+
+.course-blurb-wrapper {
+    text-align: left;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.course-blurb {
+    font-family: verdana;
+    color: #58595b;
+}
+
 hr {
     width: 90%;
     margin-top: 20px;
@@ -383,4 +532,3 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-

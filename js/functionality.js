@@ -20,3 +20,26 @@ function toggleArrow(idNum) {
     }
     jobWrapper.scrollIntoView({behavior: 'smooth'});
 }
+
+function toggleCourseArrow(idNum) {
+    var moreArrow = document.getElementById("more-arrow-course-".concat(idNum));
+    var lessArrow = document.getElementById("less-arrow-course-".concat(idNum));
+    var courseDesc = document.getElementById("course-expand-wrapper-".concat(idNum));
+    var moreArrowWrapper = document.getElementById("expand-arrow-hide-course-".concat(idNum));
+    var lessArrowWrapper = document.getElementById("expand-arrow-show-course-".concat(idNum));
+    // var jobWrapper = document.getElementById("job-".concat(idNum));
+    if (moreArrow.style.display === "none") { //Hide
+        moreArrow.style.display = "inline-block";
+        lessArrow.style.display = "none";
+        courseDesc.style.display = "none";
+        moreArrowWrapper.style.display = "inline-block";
+        lessArrowWrapper.style.display = "none";
+    } else { //Show
+        moreArrow.style.display = "none";
+        lessArrow.style.display = "inline-block";
+        courseDesc.style.display = "inline-block";
+        moreArrowWrapper.style.display = "none";
+        lessArrowWrapper.style.display = "inline-block";
+    }
+    // jobWrapper.scrollIntoView({behavior: 'smooth'});
+}
