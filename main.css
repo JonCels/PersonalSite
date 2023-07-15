@@ -378,14 +378,13 @@ html {
 .degree-info-wrapper {
     /* border: 1px solid black; */
     text-align: center;
-    margin-top: 30px;
     overflow: hidden;
     min-width: 300px;
 }
 
 .degree-title-wrapper {
     /* border: 1px solid red; */
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .degree-title {
