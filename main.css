@@ -485,7 +485,6 @@ html {
     display: flex;
     flex-direction: column;
     flex: 1;
-    
 }
 
 .course-col {
@@ -559,7 +558,7 @@ html {
     width: 100%;
     width: 100%;
     display: inline-block;
-    max-width: 158px;
+    max-width: 130px;
     white-space: normal;
     margin-right: 10px;
 }
