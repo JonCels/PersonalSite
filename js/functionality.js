@@ -27,7 +27,7 @@ function toggleCourseArrow(idNum) {
     var courseDesc = document.getElementById("course-expand-wrapper-".concat(idNum));
     var moreArrowWrapper = document.getElementById("expand-arrow-hide-course-".concat(idNum));
     var lessArrowWrapper = document.getElementById("expand-arrow-show-course-".concat(idNum));
-    // var jobWrapper = document.getElementById("job-".concat(idNum));
+    var courseWrapper = document.getElementById("course-".concat(idNum));
     if (moreArrow.style.display === "none") { //Hide
         moreArrow.style.display = "inline-block";
         lessArrow.style.display = "none";
@@ -41,5 +41,5 @@ function toggleCourseArrow(idNum) {
         moreArrowWrapper.style.display = "none";
         lessArrowWrapper.style.display = "inline-block";
     }
-    // jobWrapper.scrollIntoView({behavior: 'smooth'});
+    courseWrapper.scrollIntoView({behavior: 'smooth'});
 }
