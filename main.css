@@ -566,6 +566,25 @@ html {
     color: #58595b;
 }
 
+.project-info-wrapper {
+    /* margin: 30px; */
+    text-align: center;
+    margin-top: 30px;
+    min-width: 300px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-col {
+    flex: 1;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+
 hr {
     width: 90%;
     margin-top: 20px;

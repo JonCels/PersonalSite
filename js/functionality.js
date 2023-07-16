@@ -43,3 +43,26 @@ function toggleCourseArrow(idNum) {
     }
     courseWrapper.scrollIntoView({behavior: 'smooth'});
 }
+
+function toggleProjectArrow(idNum) {
+    var moreArrow = document.getElementById("more-arrow-project-".concat(idNum));
+    var lessArrow = document.getElementById("less-arrow-project-".concat(idNum));
+    var projectDesc = document.getElementById("project-expand-wrapper-".concat(idNum));
+    var moreArrowWrapper = document.getElementById("expand-arrow-hide-project-".concat(idNum));
+    var lessArrowWrapper = document.getElementById("expand-arrow-show-project-".concat(idNum));
+    var projectWrapper = document.getElementById("project-".concat(idNum));
+    if (moreArrow.style.display === "none") { //Hide
+        moreArrow.style.display = "inline-block";
+        lessArrow.style.display = "none";
+        projectDesc.style.display = "none";
+        moreArrowWrapper.style.display = "inline-block";
+        lessArrowWrapper.style.display = "none";
+    } else { //Show
+        moreArrow.style.display = "none";
+        lessArrow.style.display = "inline-block";
+        projectDesc.style.display = "inline-block";
+        moreArrowWrapper.style.display = "none";
+        lessArrowWrapper.style.display = "inline-block";
+    }
+    projectWrapper.scrollIntoView({behavior: 'smooth'});
+}
