@@ -35,7 +35,7 @@ html {
 }
 
 .nav-line-right {
-    flex: 0 0 500px;
+    flex: 0 0 524px;
     min-width: max-content;
     /* text-align: right; */
 }
@@ -426,7 +426,7 @@ html {
 .coursework-info-wrapper {
     /* border: 1px solid black; */
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     overflow: hidden;
     min-width: 300px;
 }
@@ -557,7 +557,6 @@ html {
 .project-info-wrapper {
     /* margin: 30px; */
     text-align: center;
-    margin-top: 30px;
     min-width: 300px;
 }
 
