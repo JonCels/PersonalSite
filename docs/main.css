@@ -127,7 +127,7 @@ html {
 
 .name-card {
     font-family: verdana;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
     color: #003243;
     padding: 60px;
@@ -603,4 +603,88 @@ hr {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.home-wrapper {
+    display: flex;
+}
+
+.home-left-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: lavenderblush; */
+    flex: 0 0 84px;
+}
+
+.home-left-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* background-color: mintcream; */
+    flex: 1;
+}
+
+.home-right-main-wrapper {
+    /* background-color: ivory; */
+    flex: 1;
+    text-align: right;
+}
+
+.home-right-nav-wrapper {
+    /* background-color: azure; */
+    flex: 0 0 40px;
+}
+
+.left-nav-row {
+    flex: 0 0 84px;
+    text-align: center;
+}
+
+.left-main-row {
+    flex: 1;
+    margin: 20px;
+}
+
+.left-side-nav-icon {
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.home-name-card {
+    font-family: verdana;
+    font-size: 48px;
+    font-weight: bold;
+    color: #003243;
+    padding-top: 40px;
+    padding-right: 60px;
+}
+
+.home-titles-card {
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: 550;
+    color: #003243;
+    padding-top: 10px;
+}
+
+.home-about-me-card {
+    font-family: verdana;
+    font-size: 14px;
+    color: #58595b;
+    padding-top: 30px;
+}
+
+.home-coding-gif {
+    width: 320px; 
+    height: 240px;
+}
+
+#home-headshot {
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 5px;
+    margin-top: 66px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
