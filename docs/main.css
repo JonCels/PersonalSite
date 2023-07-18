@@ -56,6 +56,12 @@ html {
     margin: 20px;
 }
 
+.left-main-row-bottom {
+    flex: none;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
 .left-side-nav-icon {
     margin: 20px;
     height: 40px;
