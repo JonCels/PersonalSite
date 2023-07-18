@@ -101,6 +101,56 @@ html {
     box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
 }
 
+.nav-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-line-left {
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.nav-line-middle {
+    flex: 1 1 auto;
+    min-width: max-content;
+}
+
+.nav-line-right {
+    flex: 0 0 524px;
+    min-width: max-content;
+    /* text-align: right; */
+}
+
+.nav-child {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.nav-text {
+    font-family: verdana;
+    font-size: 14px;
+    color: #58595b;
+}
+
+.nav-text-slash {
+    font-family: verdana;
+    font-size: 16px;
+    color: #58595b;
+}
+
+.nav-icon {
+    vertical-align: middle;
+    margin-bottom: 4px;
+    max-width: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
 .job-top-wrapper {
     overflow: hidden;
     /* border: 1px solid blueviolet; */
