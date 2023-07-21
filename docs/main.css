@@ -16,6 +16,7 @@ html {
     /* border: 1px solid black; */
     overflow: hidden;
     box-shadow: 0 4px 8px 0 #58595b, 0 6px 20px 0 #58595b;
+    min-width: 580px;
 }
 
 .home-wrapper {
@@ -42,7 +43,7 @@ html {
     /* background-color: ivory; */
     flex: 3;
     text-align: right;
-    margin-right: 40px;
+    margin-right: 20px;
     margin-left: 20px;
 }
 
@@ -79,7 +80,7 @@ html {
 }
 
 @media screen and (max-width: 1394px) { 
-    .home-coding-gif {
+    .left-main-row-bottom {
         display: none;
     }
 }
