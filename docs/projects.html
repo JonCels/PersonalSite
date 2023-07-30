@@ -82,7 +82,13 @@
                                 Chess Connect was a group project done for my engineering capstone. The project took place from September 2022 until April 2023, spanning the last two semesters of my undergraduate degree. 
                                 <br>
                                 <br>
-                                The Chess Connect project is a custom-made chess set that tracks the movement of the pieces as the players play. The Chess Connect set includes a custom wooden board, 3D printed pieces, a built-in touchscreen LCD, hidden embedded components, and the chess connect software. The board has 64 squares, each with an inset LED and a <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">Hall effect sensor underneath.</a>
+                                The Chess Connect project is a custom-made chess set that tracks the movement of the pieces as the players play. The Chess Connect set includes a custom wooden board, 3D printed pieces, a built-in touchscreen LCD, hidden embedded components, and the chess connect software. As you play a game on the board, your game data is transmitted in real time to a nearby web server via Bluetooth. The web server then shows the data on a custom web application, allowing any device to watch the game unfold in real time.
+                                <br>
+                                <br>
+                                The board has 64 squares, each with an inset LED and a <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">Hall effect sensor underneath.</a> The Hall sensors detect magnetic fields, so each piece has an embedded magnet aligned north or south (for white or black pieces respectively). This enables each square to detect one of three readings: No piece, black piece, or white piece. The starting position of a chess game allows the software to know what pieces are on what squares initially. This allows the software to track individual piece movements from the ternary sensor readings.
+                                <br>
+                                <br>
+                                The board also includes a touchscreen LCD for user inputs such as starting games, resigning/drawing games. The screen also covers error handling. If users play out of turn, knock over pieces, play an illegal move, etc., they are informed via the LCD screen.
                                 <br>
                                 <br>
                                 Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
