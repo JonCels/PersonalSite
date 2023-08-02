@@ -82,10 +82,25 @@
                                 Chess Connect was a group project done for my engineering capstone. The project took place from September 2022 until April 2023, spanning the last two semesters of my undergraduate degree. 
                                 <br>
                                 <br>
-                                The Chess Connect project is a custom-made chess set that tracks the movement of the pieces as the players play. The Chess Connect set includes a custom wooden board, 3D printed pieces, a built-in touchscreen LCD, hidden embedded components, and the chess connect software. The board has 64 squares, each with an inset LED and a <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">Hall effect sensor underneath.</a>
+                                The Chess Connect project is a custom-made chess set that tracks the movement of the pieces as the players play. The Chess Connect set includes a custom wooden board, 3D printed pieces, a built-in touchscreen LCD, embedded controllers, and the chess connect software. As you play a game on the board, your game data is transmitted to a nearby web server via Bluetooth. The web server then shows the data on a custom web application, allowing any device to watch the game unfold in real time.
                                 <br>
                                 <br>
-                                Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                                The board has 64 squares, each with an inset LED and a <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">Hall effect sensor underneath.</a> The Hall sensors detect magnetic fields, so each piece has an embedded magnet aligned north or south (for white or black pieces respectively). This enables each square to detect one of three readings: No piece, black piece, or white piece. The starting position of a chess game allows the software to know what pieces are on what squares initially. This allows the software to track individual piece movements from the ternary sensor readings.
+                                <br>
+                                <br>
+                                Chess Connect has three modes of play: Beginner mode, Normal mode, and Engine mode. Normal mode is a regular game of chess, where the pieces are tracked and broadcast with no further features. Beginner mode is the same, but adds one additional component: if users pick up and suspend a piece in the air on their turn, LEDs on the board will light up, indicating which squares the piece can move to. This helps beginners learn how the pieces can move around. Engine mode is meant for analyzing and studying games. Every time a piece is moved, Chess Connect connects to an external chess engine API to calculate the best move for the given position. This move is then displayed to the user.
+                                <br>
+                                <br>
+                                The board includes a touchscreen LCD for user inputs and display. The user is initially presented with a choice of selecting between Beginner mode, Normal mode, and Engine mode. They are able to select the desired mode, start a game, and resign/draw active games. The screen also covers error handling. If users play out of turn, knock over pieces, play an illegal move, etc., they are informed via the LCD screen. Game terminations like checkmate and stalemate are also displayed on the LCD, along with engine-suggested moves in Engine mode. Users also had an option to change themes between light and dark mode.
+                                <br>
+                                <br>
+                                Chess Connect runs on an Arduino Mega, utilizing the SoftwareSerial, Adafruit TFTLCD, Adafruit GFX, and Touchscreen libraries for the LCD and Bluetooth. Chess game logic was programmed on the Arduino in order to validate moves and supply possible moves in beginner mode. Input signals from the Hall sensors are multiplexed and run through an analog-to-digital converter (ADC) due to the large number of connections required into the Mega.
+                                <br>
+                                <br>
+                                Chess Connect also includes a web application made using React.js, Node.js, and Express.js. The application uses the bluetooth-serial-port library to listen for Bluetooth signals from the Arduino, then communicates from backend to frontend via WebSockets. In engine mode, an external API is called, returning a move. This is communicated back to the embedded controller via Bluetooth. This allows the web application to update in real time as moves are made on the board.
+                                <br>
+                                <br>
+                                <a href="https://github.com/JonCels/chess-connect">Check out Chess Connect on GitHub</a> to see our code, documentation, and more about the project. If you're curious how anything works or have any questions, please send me an email at celsjonathan@gmail.com.
                             </span>
                         </div>
                     </div>
@@ -107,17 +122,27 @@
                     </div>
                     <div class="project-col" style="background-color: floralwhite">
                         <div class="project-left">
-                            <span class="project-title">Price Lookup <br>with Mouser API</span>
+                            <span class="project-title">Price Analysis <br>with Mouser API</span>
                         </div>
                         <div class="project-right">
                             <span class="project-blurb">
-                                Nulla at sollicitudin ante, nec porttitor lectus. Ut turpis nulla, tincidunt sed metus at, auctor condimentum velit. Mauris congue metus a sapien egestas posuere. Aliquam metus nisl, bibendum ac dui in, semper ullamcorper orci. Aliquam eu blandit risus. Fusce augue ipsum, varius quis risus eu, ultrices sodales justo. Nullam sed ex a nibh vulputate fermentum non et ligula. Proin quis hendrerit elit, nec gravida ligula. 
+                                My time at Celestica was focused on development for a huge internal application called Celestica that covered every step of a project's life. QuoteApp was so big that I can't honestly explain it. From project creation, team management, distrubutor analysis, supplier RFQs, BOMs, cost analysis, price lookups, and resistor matrices, QuoteApp did everything. There were hundreds of functionalities that I never had a chance to see over my 16-months at Celestica, let alone work on or understand. One part of QuoteApp that I am very familiar with however, is the project price lookup.
                                 <br>
                                 <br>
-                                Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                                First, let's talk about the problem. Projects at Celestica are big, and include a lot of moving parts (literally). These parts were sourced from a number of different distributors, such as Mouser and Arrow. When purchasing parts, Celestica employees would have to connect with the distributor, retrieving pricing data for different breakpoints. Then they would apply a number of Excel formulas and perform in-depth analysis on price breakpoints to determine the most economical options.
                                 <br>
                                 <br>
-                                Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                                <img align="right" class="pricing-example" src="./images/Mouser_Pricing_Example.png" alt="Example Mouser Part Pricing Table">
+                                Let's go through a quick example. We are looking to order some capacitors from Mouser. These capacitors are small, and are sold by the reel or on tape custom cut to a specific size. The reference picture shows the pre-determined reel sizes (1, 10, 100, 1000, 2500, 10000, 30000, 60000, 90000). If we want to buy 910 capacitors, we have a couple different options. We could buy a custom tape of 1000, or buy 100 nine times, and then add another 10, etc. Depending how many you buy at once, the per-unit price changes. But we also don't want excess assets that our customers don't need. There are a lot more factors to consider as well. There are additional fees for custom cut tape vs full reels, some projects have timing requirements that are affected by the factory lead time, certain parts have stock limitations, etc. This sometimes leads to days of analysis for one part, and some projects have thousands of parts. 
+                                <br>
+                                <br>
+                                In recent years, distributors have begun creating API's to access their part data. My job was to connect to and consume Mouser's APIs for searching and ordering parts, then to perform this pricing analysis automatically. This took the work from manual to programatic analysis, drastically improving effeciency for part lookups and freeing our employees to focus on other things with their time.
+                                <br>
+                                <br>
+                                This project took roughly 5 months to complete, and the majority of the work came in the form of multiple thousand-line PL/SQL stored procedures/queries. This allowed me to work extensively alongside business analysts to design and test the logic, exposing me to valuable business experience.
+                                <br>
+                                <br>
+                                Today this project is a small page in QuoteApp that is used every day, alongside similar functionality for other distributors and manufacturers, continuing to save hours of pricing analysis.
                             </span>
                         </div>
                     </div>
