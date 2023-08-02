@@ -122,17 +122,27 @@
                     </div>
                     <div class="project-col" style="background-color: floralwhite">
                         <div class="project-left">
-                            <span class="project-title">Price Lookup <br>with Mouser API</span>
+                            <span class="project-title">Price Analysis <br>with Mouser API</span>
                         </div>
                         <div class="project-right">
                             <span class="project-blurb">
-                                Nulla at sollicitudin ante, nec porttitor lectus. Ut turpis nulla, tincidunt sed metus at, auctor condimentum velit. Mauris congue metus a sapien egestas posuere. Aliquam metus nisl, bibendum ac dui in, semper ullamcorper orci. Aliquam eu blandit risus. Fusce augue ipsum, varius quis risus eu, ultrices sodales justo. Nullam sed ex a nibh vulputate fermentum non et ligula. Proin quis hendrerit elit, nec gravida ligula. 
+                                My time at Celestica was focused on development for a huge internal application called Celestica that covered every step of a project's life. QuoteApp was so big that I can't honestly explain it. From project creation, team management, distrubutor analysis, supplier RFQs, BOMs, cost analysis, price lookups, and resistor matrices, QuoteApp did everything. There were hundreds of functionalities that I never had a chance to see over my 16-months at Celestica, let alone work on or understand. One part of QuoteApp that I am very familiar with however, is the project price lookup.
                                 <br>
                                 <br>
-                                Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                                First, let's talk about the problem. Projects at Celestica are big, and include a lot of moving parts (literally). These parts were sourced from a number of different distributors, such as Mouser and Arrow. When purchasing parts, Celestica employees would have to connect with the distributor, retrieving pricing data for different breakpoints. Then they would apply a number of Excel formulas and perform in-depth analysis on price breakpoints to determine the most economical options.
                                 <br>
                                 <br>
-                                Maecenas erat ante, iaculis lobortis viverra non, pretium id mauris. Maecenas fringilla accumsan purus ut pretium. Vestibulum ultricies condimentum lectus sit amet ultricies. Vivamus ut lacus id justo sollicitudin mattis. Ut finibus tellus in rutrum pretium. Pellentesque consequat bibendum dolor.
+                                <img align="right" class="pricing-example" src="./images/Mouser_Pricing_Example.png" alt="Example Mouser Part Pricing Table">
+                                Let's go through a quick example. We are looking to order some capacitors from Mouser. These capacitors are small, and are sold by the reel or on tape custom cut to a specific size. The reference picture shows the pre-determined reel sizes (1, 10, 100, 1000, 2500, 10000, 30000, 60000, 90000). If we want to buy 910 capacitors, we have a couple different options. We could buy a custom tape of 1000, or buy 100 nine times, and then add another 10, etc. Depending how many you buy at once, the per-unit price changes. But we also don't want excess assets that our customers don't need. There are a lot more factors to consider as well. There are additional fees for custom cut tape vs full reels, some projects have timing requirements that are affected by the factory lead time, certain parts have stock limitations, etc. This sometimes leads to days of analysis for one part, and some projects have thousands of parts. 
+                                <br>
+                                <br>
+                                In recent years, distributors have begun creating API's to access their part data. My job was to connect to and consume Mouser's APIs for searching and ordering parts, then to perform this pricing analysis automatically. This took the work from manual to programatic analysis, drastically improving effeciency for part lookups and freeing our employees to focus on other things with their time.
+                                <br>
+                                <br>
+                                This project took roughly 5 months to complete, and the majority of the work came in the form of multiple thousand-line PL/SQL stored procedures/queries. This allowed me to work extensively alongside business analysts to design and test the logic, exposing me to valuable business experience.
+                                <br>
+                                <br>
+                                Today this project is a small page in QuoteApp that is used every day, alongside similar functionality for other distributors and manufacturers, continuing to save hours of pricing analysis.
                             </span>
                         </div>
                     </div>
