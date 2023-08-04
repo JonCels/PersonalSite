@@ -43,7 +43,7 @@ html {
     /* background-color: ivory; */
     flex: 3;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-left: 20px;
 }
 
@@ -610,4 +610,11 @@ hr {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pricing-example {
+    max-width: 250px;
+    max-height: 500px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
