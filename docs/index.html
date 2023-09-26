@@ -111,7 +111,24 @@
                 </div>
             </div>
             <div class="home-right-wrapper">
-                <img id="home-headshot" src="./images/headshot.JPG">
+                <div class="slideshow-wrapper">
+                    <div class="slide fade">
+                        <img id="home-family-picture" src="./images/FamilyPic.jpg">
+                    </div>
+                    <div class="slide fade">
+                        <img id="home-headshot" src="./images/headshot.JPG">
+                    </div>
+                    <div class="slide fade">
+                        <img id="home-grad-photo" src="./images/gradphoto.png">
+                    </div>
+                    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </div>
     </div>

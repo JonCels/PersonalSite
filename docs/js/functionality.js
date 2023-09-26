@@ -1,3 +1,36 @@
+var slideInd = 0;
+showSlides(slideInd);
+
+function nextSlide(n) {
+    showSlides(slideInd += n);
+}
+
+function currSlide(n) {
+    showSlides(slideInd = n);
+}
+
+function showSlides(n) {
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n >= slides.length) { //Overflow
+        slideInd = 0;
+    }
+    if (n < 0) { //Underflow
+        slideInd = slides.length - 1;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideInd].style.display = "block";
+    dots[slideInd].className += " active";
+}
+
 function toggleArrow(idNum) {
     var moreArrow = document.getElementById("more-arrow-".concat(idNum));
     var lessArrow = document.getElementById("less-arrow-".concat(idNum));
@@ -66,3 +99,4 @@ function toggleProjectArrow(idNum) {
     }
     projectWrapper.scrollIntoView({behavior: 'smooth'});
 }
+
